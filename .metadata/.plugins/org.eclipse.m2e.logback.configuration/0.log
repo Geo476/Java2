@@ -30,3 +30,8 @@
 2016-12-06 14:30:26,751 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-12-06 14:30:26,766 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-12-06 14:30:26,782 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ETY12\Documents\git\Java\Java2\Java2\pizzeria-project\pizzeria-console\src\test\resources
+2016-12-06 14:44:08,836 [JavaFX Application Thread] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: dta:pizzeria-project:0.0.1-SNAPSHOT @ C:\Users\ETY12\Documents\git\Java\Java2\Java2\pizzeria-project\pom.xml.
+2016-12-06 14:44:51,229 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-06 14:44:51,969 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-06 14:44:51,975 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-06 14:44:51,996 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ETY12\Documents\git\Java\Java2\Java2\pizzeria-project\pizzeria-console\src\test\resources
