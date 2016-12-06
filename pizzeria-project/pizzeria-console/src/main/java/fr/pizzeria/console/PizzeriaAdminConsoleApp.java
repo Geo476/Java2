@@ -12,7 +12,7 @@ import fr.pizzeria.ihm.IhmUtil;
 import fr.pizzeria.ihm.MainMenu;
 import fr.pizzeria.model.Pizza;
 
-public class PizzeriaAdminConsoleApp {
+public class PizzeriaAdminConsoleApp 
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException  {
 		
