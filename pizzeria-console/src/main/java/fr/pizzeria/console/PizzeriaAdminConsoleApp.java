@@ -14,7 +14,7 @@ public class PizzeriaAdminConsoleApp {
 	public static void main(String[] args) {
 		
 		
-		
+		/*
 		Pizza p1 = new Pizza();
 		p1.setCode("MAR");
 		
@@ -23,7 +23,7 @@ public class PizzeriaAdminConsoleApp {
 		p2.setCode("MAR");
 		
 		System.out.println("p1=p2 ? " + p1.equals(p2));
-		
+		*/
 
 		IhmUtil utils = new IhmUtil(new Scanner(System.in), new PizzaDaoArray());
 		MainMenu core = new MainMenu(utils);
