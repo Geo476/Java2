@@ -24,7 +24,8 @@ public class MainMenu {
 		this.menu.put(3, new DeletePizza(utils)); 
 		this.menu.put(4, new ListPizzaGpCat(utils));
 		this.menu.put(5, new ListPizzaChere(utils));
-		this.menu.put(6, new ExitMenu());
+		this.menu.put(6, new ImportPizza(utils));
+		this.menu.put(7, new ExitMenu());
 		
 		
 
@@ -56,7 +57,7 @@ public class MainMenu {
 			return true;
 		}
 		else if (Integer.parseInt(input) == 99)
-			this.menu.get(6).do_action();
+			this.menu.get(7).do_action();
 		return false;
 	}
 

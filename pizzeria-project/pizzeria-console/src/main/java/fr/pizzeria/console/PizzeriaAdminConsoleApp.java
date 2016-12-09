@@ -2,6 +2,7 @@ package fr.pizzeria.console;
 
 import java.util.ResourceBundle;
 import java.util.Scanner;
+import java.util.logging.Level;
 
 import javax.print.attribute.standard.PrinterLocation;
 import javax.swing.plaf.synth.SynthSpinnerUI;
@@ -15,6 +16,8 @@ import fr.pizzeria.model.Pizza;
 public class PizzeriaAdminConsoleApp {
 	
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException  {
+		
+		java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.SEVERE);
 		
 		ResourceBundle bundle = ResourceBundle.getBundle("application");
 		String daoConfig = bundle.getString("dao.impl");

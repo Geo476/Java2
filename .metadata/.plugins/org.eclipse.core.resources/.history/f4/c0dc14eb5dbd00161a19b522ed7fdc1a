@@ -1,0 +1,12 @@
+package fr.pizzeria.ihm.action;
+
+import fr.pizzeria.ihm.IhmUtil;
+
+
+public class ImportPizza extends Action {
+
+	
+	private IhmUtil utils;
+	public ImportPizza(IhmUtil utils);
+	
+}

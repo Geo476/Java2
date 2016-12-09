@@ -1,0 +1,89 @@
+package fr.pizzeria.dao;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+
+import fr.pizzeria.Exception.DeletePizzaException;
+import fr.pizzeria.Exception.SavePizzaException;
+import fr.pizzeria.Exception.UpdatePizzaException;
+import fr.pizzeria.model.Pizza;
+
+public class PizzaDaoJpa implements PizzaDao{
+
+	private EntityManagerFactory EMF;
+	
+	
+	public PizzaDaoJpa (){
+		
+		
+		this.EMF = Persistence.createEntityManagerFactory("pizzeria-console");
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	
+	
+	
+	@Override
+	public List<Pizza> findAllPizzas() {
+		
+		EntityManager em = EMF.createEntityManager();
+		
+		TypedQuery<Pizza> query = em.createQuery("select p from Pizza p", Pizza.class);
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+		
+		
+		return query.getResultList();
+	}
+
+	
+	
+	
+	
+	
+	@Override
+	public boolean saveNewPizza(Pizza pizza) throws SavePizzaException {
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updatePizza(String codePizza, Pizza pizza) throws UpdatePizzaException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deletePizza(String codePizza) throws DeletePizzaException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Optional<Pizza> findPizzaByCode(String codePizza) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isCodeExist(String codePizza) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

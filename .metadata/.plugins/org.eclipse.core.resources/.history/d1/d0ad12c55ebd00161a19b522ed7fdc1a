@@ -1,0 +1,48 @@
+package fr.pizzeria.ihm.action;
+
+import fr.pizzeria.ihm.IhmUtil;
+
+
+public class ImportPizza extends Action {
+
+	
+	private IhmUtil utils;
+	public ImportPizza(IhmUtil utils){
+		super();
+		this.setDescription("6. Importer des pizzas");
+		this.utils = utils;
+		
+	};
+	@Override
+	
+	
+	
+	public void do_action() {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	@Override
+	public void describe_action() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

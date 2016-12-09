@@ -12,7 +12,12 @@
   
   
   <name>pizzeria-console</name>
+  <url>http://maven.apache.org</url>
   
+  <properties>
+  <daoType>fr.pizzeria.dao.PizzaDaoJpa</daoType>
+  
+  </properties>
   
   
  <build>
@@ -47,6 +52,14 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<resources>
+		
+		<resource>
+			<directory>src/main/resources</directory>
+			<filtering>true</filtering>
+		</resource>
+		</resources>
+		
 	</build>
 
 	<dependencies>
@@ -62,6 +75,19 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>pizzeria-model</artifactId>
 		</dependency>
+		
+		<dependency>
+    <groupId>org.hibernate.javax.persistence</groupId>
+    <artifactId>hibernate-jpa-2.1-api</artifactId>
+    
+   </dependency>
+   
+   <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    
+</dependency>
+   
 	</dependencies>
   
 </project>

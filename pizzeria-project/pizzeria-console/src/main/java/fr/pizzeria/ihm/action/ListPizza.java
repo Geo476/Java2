@@ -20,6 +20,7 @@ public class ListPizza extends Action {
 			System.out.println(p.toString());
 		}
 		System.out.println(utils.getPizzaDao().findAllPizzas().size() + " Pizzas");
+
 	}
 	
 	@Override

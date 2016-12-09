@@ -35,7 +35,7 @@ public class AddPizza extends Action {
 		
 		
 		Pizza newPizza = new Pizza();
-		newPizza.setId(this.utils.getPizzaDao().findAllPizzas().size());
+		//newPizza.setId(this.utils.getPizzaDao().findAllPizzas().size());
 		newPizza.setCode(code);
 		newPizza.setNom(name);
 		newPizza.setCat(CategoriePizza.valueOf(cat));

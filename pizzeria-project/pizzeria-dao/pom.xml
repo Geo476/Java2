@@ -11,7 +11,9 @@
 
 
   <packaging>jar</packaging>
-  <build>
+  
+  
+<build>
 <finalName>pizzeria-dao</finalName>
 </build>
   
@@ -26,6 +28,16 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>pizzeria-model</artifactId>
 		</dependency>
+		
+		
+	
+  <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.40</version>
+</dependency>
+	
+	
 	</dependencies>
 	
 	

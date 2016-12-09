@@ -59,6 +59,8 @@ public class UpdatePizza extends Action {
 				} catch (Exception e) {
 					System.out.println("Invalid price");
 				}
+				
+				this.pizzaDao.updatePizza(code, pizza);
 				break;
 				
 				

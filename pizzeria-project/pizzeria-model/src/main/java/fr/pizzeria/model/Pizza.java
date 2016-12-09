@@ -1,11 +1,32 @@
 package fr.pizzeria.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Pizza {
 
-	private int id;
+	
+	@Id 
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
+	
+	@Column(name="REFERENCE")
 	private String code;
+	
+	@Column(name="LIBELLE")
 	private String nom;
+	
+	@Column(name="PRIX")
 	private double prix;
+	
+	@Enumerated(EnumType.STRING)
+	@Column(name="CATEGORIE")
 	private CategoriePizza cat;
 	
 	public static int nbPizzas;
@@ -15,7 +36,7 @@ public class Pizza {
 		super();
 	}
 
-	public Pizza(int id, String code, String nom, double prix,CategoriePizza cat) {
+	public Pizza(Integer id, String code, String nom, double prix,CategoriePizza cat) {
 		super();
 		this.id = id;
 		this.code = code;
@@ -28,7 +49,7 @@ public class Pizza {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

@@ -1,0 +1,9 @@
+
+public class PizzaDaoJdbc {
+
+	Class.forName("com.mysql.jdbc.Driver");
+	
+	Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pizzeria","root","");
+	
+	
+}

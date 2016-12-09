@@ -1,0 +1,61 @@
+package fr.pizzeria.ihm.action;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import fr.pizzeria.ihm.IhmUtil;
+
+
+public class ImportPizza extends Action {
+
+	
+	private IhmUtil utils;
+	public ImportPizza(IhmUtil utils){
+		super();
+		this.setDescription("6. Importer des pizzas");
+		this.utils = utils;
+		
+	};
+	@Override
+	
+	
+	
+	public void do_action() {
+		// TODO Auto-generated method stub
+		
+		Connection connection;
+		Statement statement;
+			
+		
+		
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/pizzeria","root","");
+		Statement statement = connection.createStatement();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	@Override
+	public void describe_action() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
